@@ -11,7 +11,7 @@ date = "2025-05-23"
 
 
 ### About the Event
-April 28, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1350783674173493279).
+May 5, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1350783674173493279).
 
 
 
