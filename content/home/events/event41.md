@@ -3,9 +3,10 @@ title = "Aurora-M: The First Open Source Multilingual Language Model Red-teamed 
 image = "/images/ev_misra_aurora/theme_photo.jpeg"
 summary = "Speaker: Diganta Misra | May 23, 2024 18:00-20:00"
 url = "/events/auroram-lm"
+recording = "https://www.youtube.com/watch?v=5PsRbCbpWg8"
 date = "2024-05-23"
 +++
-
+{{< youtube "5PsRbCbpWg8" >}}
 
 
 ### About this Event
