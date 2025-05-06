@@ -3,7 +3,7 @@ title = "Adversarial Threats and defenses in LLMs"
 image = "/images/ev_leo_schwinn_soft_prompt_threats/theme_photo.jpeg"
 summary = "Speaker: Dr. Leo Schwinn | May 5, 2025 19:00-20:00"
 url = "/events/adv-threats-LLMs"
-date = "2025-05-23"
+date = "2025-04-20"
 +++
 
 
