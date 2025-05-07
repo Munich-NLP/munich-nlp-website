@@ -10,8 +10,8 @@ date = "2025-04-20"
 <!-- ![Online Event | Adversarial Threats and defenses in LLMs ><](/images/ev_leo_schwinn_soft_prompt_threats/theme_photo.jpeg) -->
 
 
-### About the Event
-May 5, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1350783674173493279).
+<!-- ### About the Event
+May 5, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1350783674173493279). -->
 
 
 
