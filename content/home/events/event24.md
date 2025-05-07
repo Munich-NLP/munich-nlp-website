@@ -27,7 +27,6 @@ We will delve into the syntax, logic, and evolution of ipyvizzu-story and the un
 
 ### Speakers
 
-![Peter Vidos ><](https://media.licdn.com/dms/image/C4D03AQHBmXBx_Ng06Q/profile-displayphoto-shrink_200_200/0/1516527754681?e=1683763200&v=beta&t=jf_b242_0t0IJvGzbB5qa867ZAQheXgg1-GSWkhex0k)
 
 [**Peter Vidos**](https://www.linkedin.com/in/petervidos) Peter is the CEO & Co-Founder of [Vizzu](https://vizzuhq.com/).
 
