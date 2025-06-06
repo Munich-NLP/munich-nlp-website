@@ -5,6 +5,7 @@ summary = "Speaker: Nils Fleischmann | June 17, 2025 19:00-20:00"
 url = "/events/fleischmann-pruna-ai"
 date = "2025-06-17"
 +++
+<!-- https://media.licdn.com/dms/image/v2/D4E0BAQHH7NSggYcbdA/company-logo_200_200/company-logo_200_200/0/1722618537713/pruna_ai_logo?e=1754524800&v=beta&t=aNUE1LqSJQ5aIM0gq5YUYmDea6W_7z_J2UKVniZBauQ -->
 
 
 
