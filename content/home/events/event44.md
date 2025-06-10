@@ -9,7 +9,7 @@ date = "2025-06-17"
 
 
 
-### About the Event
+### Save the Date!
 June 17th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/bCuya2mKts?event=1369744529581932584).
 
 
