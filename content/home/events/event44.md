@@ -4,14 +4,13 @@ image = "/images/ev_fleischmann_pruna_ai/theme_photo.jpeg"
 summary = "Speaker: Nils Fleischmann | June 17, 2025 19:00-20:00"
 url = "/events/fleischmann-pruna-ai"
 date = "2025-06-17"
+recording = "https://www.youtube.com/watch?v=UdV6sasr_B0"
 +++
 <!-- https://media.licdn.com/dms/image/v2/D4E0BAQHH7NSggYcbdA/company-logo_200_200/company-logo_200_200/0/1722618537713/pruna_ai_logo?e=1754524800&v=beta&t=aNUE1LqSJQ5aIM0gq5YUYmDea6W_7z_J2UKVniZBauQ -->
 
 
 
-### Save the Date!
-June 17th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/bCuya2mKts?event=1369744529581932584).
-
+{{< youtube "UdV6sasr_B0" >}}
 
 
 ### About this Event
