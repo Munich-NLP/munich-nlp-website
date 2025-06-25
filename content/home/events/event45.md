@@ -4,13 +4,14 @@ image = "/images/ev_fromm/theme_photo.jpeg"
 summary = "Speaker: Dr. Michael Fromm | June 21, 2025 15:00-16:00"
 url = "/events/fromm-teuken"
 date = "2025-06-21"
+recording="https://www.youtube.com/watch?v=uUXo7N0a0Ag"
 +++
 
 
-### Save the Date!
-June 21th, 2025 15:00-16:00 -- [Munich🥨NLP Discord Server](https://discord.gg/sptxuhMZb6?event=1379142429034151997).
+<!-- ### Save the Date!
+June 21th, 2025 15:00-16:00 -- [Munich🥨NLP Discord Server](https://discord.gg/sptxuhMZb6?event=1379142429034151997). -->
 
-
+{{< youtube "uUXo7N0a0Ag" >}}
 
 ### About this Event
 

@@ -4,13 +4,14 @@ image = "/images/ev_beemo/theme_photo.jpeg"
 summary = "Speaker: Jason S. Lucas | June 24, 2025 19:00-20:00"
 url = "/events/jason-lucas-beemo"
 date = "2025-06-24"
+recording="https://www.youtube.com/watch?v=-LZXtrJ4TEs"
 +++
 
-
+<!-- 
 ### Save the Date!
-June 24th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/2qGwzkaurb?event=1378008686777335909).
+June 24th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/2qGwzkaurb?event=1378008686777335909). -->
 
-
+{{< youtube "-LZXtrJ4TEs" >}}
 
 ### About this Event
 
