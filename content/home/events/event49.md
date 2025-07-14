@@ -25,6 +25,23 @@ The Pre ACL Event is dedicated to presenting and discussing pioneering research 
 **Audience**: The event is aimed at researchers, practitioners, and enthusiasts in the field of NLP and AI. It is particularly appealing to those interested in the latest research and developments in these areas.
 Papers discussed:
 
+- **What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns**
+  Michael A. Hedderich, Anyi Wang, Raoyuan Zhao, Florian Eichin, Jonas Fischer, Barbara Plank
+  [Arxiv](https://arxiv.org/abs/2504.15815)
+- **Revealing Hidden Mechanisms of Cross-Country Content Moderation with Natural Language Processing**
+  Neemesh Yadav, Jiarui Liu, Francesco Ortu, Roya Ensafi, Zhijing Jin, Rada Mihalcea
+  [Arxiv](https://arxiv.org/abs/2503.05280)
+- **The Reasoning-Memorization Interplay in Language Models Is Mediated by a Single Direction**
+  Yihuai Hong, Dian Zhou, Meng Cao, Lei Yu, Zhijing Jin
+  [Arxiv](https://arxiv.org/abs/2503.23084)
+- **EXECUTE: A Multilingual Benchmark for LLM Token Understanding**
+  Lukas Edman, Helmut Schmid, Alexander Fraser
+  [Arxiv](https://arxiv.org/abs/2505.17784)
+- **Extending Context Window of Large Language Models via Positional Interpolation**
+  Shouyuan Chen, Sherman Wong, Liangjian Chen, Yuandong Tian
+  [Arxiv](https://arxiv.org/abs/2306.15595)
+
+
 
 ### Speakers
 
