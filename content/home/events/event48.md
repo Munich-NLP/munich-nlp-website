@@ -14,7 +14,7 @@ August 7th, 2025 20:30-21:30 -- [Munich🥨NLP Discord Server](https://discord.g
 
 ### About this Event
 
-Deriving compute-efficient methods for steering LLMs toward high-reward outputs at inference time is an important line of research in test-time scaling. In this talk, Harvard's Jonathan Geuter will introduce Guided Speculative Inference (GSI), a new algorithm that uses speculative drafts from a small auxiliary model and a reward-likelihood tilt to provably approximate the optimal reward-regularized policy of a larger model. I will begin by motivating test-time scaling and reviewing prior approaches like soft best-of-n and reward-guided speculative decoding. Then he’ll describe the GSI algorithm, its theoretical guarantees, and its strong empirical gains on reasoning benchmarks.
+Deriving compute-efficient methods for steering LLMs toward high-reward outputs at inference time is an important line of research in test-time scaling. In this talk, Harvard's Jonathan Geuter will introduce Guided Speculative Inference (GSI), a new algorithm that uses speculative drafts from a small auxiliary model and a reward-likelihood tilt to provably approximate the optimal reward-regularized policy of a larger model. He will begin by motivating test-time scaling and reviewing prior approaches like soft best-of-n and reward-guided speculative decoding. Then he’ll describe the GSI algorithm, its theoretical guarantees, and its strong empirical gains on reasoning benchmarks.
 
 [[PAPER]](https://arxiv.org/abs/2506.04118)
 
