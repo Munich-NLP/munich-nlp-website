@@ -1,7 +1,7 @@
 +++
 title = "AI Summit Munich 2023"
 image = "images/ev_tum_ai_summit/theme_photo.png"
-summary = "Speaker: Muthasham Oblokulov | Oct 20-21th, 2023"
+summary = "Speaker: Muthasham Oblokulov | Oct 20-21st, 2023"
 recording = "https://youtu.be/Ug5c92gxDu0?si=N0ynH37F3Aza0Gn3"
 url = "/events/tumai-summit"
 date = "2023-10-20"

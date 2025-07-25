@@ -8,7 +8,7 @@ date = "2025-07-22"
 
 
 ### Save the Date!
-July 22th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1383134714818330826).
+July 22nd, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1383134714818330826).
 
 
 
