@@ -1,6 +1,6 @@
 {{ define "main"}}
   <main id="main">
-  
+
     {{ if .Site.Params.production }}
       <meta http-equiv="refresh" content="0; url={{ .Site.Params.redirectUrl }}">
     {{ end }}
@@ -9,34 +9,25 @@
       {{ if .Site.Params.showSubheader }}
         {{ partial "home/subheader.html" . }}
       {{ end }}
-      
-        {{ range .Site.Sections }}
-            {{ range .Sections.ByWeight }}
-                {{ $stype := .Type}}
 
-                {{ if (or (and (eq $stype "events") (gt (len .Data.Pages) 0))
-                          (and (eq $stype "organizers") (gt (len .Data.Pages) 0))
-                          (eq $stype "single")) }}
-                     <div id="{{ .Params.id }}"></div>
-                     <div class="row section featured topspace">
-                       <h2 class="section-title">
-                         <span>{{.Title}}</span>
-                       </h2>
-                       
-                     {{ if eq $stype "events" }}
-                       {{ partial "home/events.html" . }}
-
-                     {{ else if eq $stype "organizers" }}
-                       {{ partial "home/organizers.html" . }}
-
-                     {{ else if eq $stype "single"  }}
-                       {{ partial "home/single.html" . }}
-
-                     {{ end }}
-                </div>	<!-- /section -->
-              {{ end }}
+      {{ range .Site.Sections }}
+        {{ if and (eq .Type "events") (.Site.Params.showEvents) }}
+          {{ partial "events/events.html" (dict "context" . "allEvents" false) }}
+        {{ else }}
+          {{ range .Sections.ByWeight }}
+            {{ $section := . }}
+            {{ if index site.Params (printf "%s%s" "show" (strings.FirstUpper (string $section.Type))) }}
+              <div id="{{ $section.Params.id }}"></div>
+                <div class="row section featured topspace">
+                  <h2 class="section-title">
+                    <span>{{$section.Title}}</span>
+                  </h2>
+                {{ partial (printf "%s%s.%s" "home/" $section.Type "html") $section }}
+              </div>	<!-- /section -->
             {{ end }}
+          {{ end }}
         {{ end }}
+      {{ end }}
     </div>	<!-- /container -->
   </main>
 

@@ -24,11 +24,15 @@ theme = "hugo-initio"
     showSubheader = true
     showEvents = true
     showOrganizers = true
+    showPartners = false
 
     showFooterContact = false
     showFooterFollowMe = true
     showFooterTextWidget = false
     showFooterFormWidget = false
+
+    # how many past events to show in the homepage
+    pastEventsPreview = 5
 
 [[menu.main]]
     name = "About"
@@ -72,29 +76,29 @@ theme = "hugo-initio"
     sharethis = true
     network = "youtube"
 [[params.social]]
-	title = "twitter"
-	url = "https://twitter.com/munichnlp"
+    title = "twitter"
+    url = "https://twitter.com/munichnlp"
     icon = "fab fa-twitter-square"
     footer = true
     sharethis = true
     network = "twitter"
 [[params.social]]
-	title = "linkedin"
-	url = "https://www.linkedin.com/company/munich-nlp/"
+    title = "linkedin"
+    url = "https://www.linkedin.com/company/munich-nlp/"
     icon = "fab fa-linkedin"
     footer = true
     sharethis = true
     network = "linkedin"
 [[params.social]]
-	title = "github"
-	url = "https://github.com/Munich-NLP"
+    title = "github"
+    url = "https://github.com/Munich-NLP"
     icon = "fab fa-github"
     footer = true
     sharethis = true
     network = "github"
 [[params.social]]
-	title = "email"
-	url = "mailto:munichnlp@gmail.com"
+    title = "email"
+    url = "mailto:munichnlp@gmail.com"
     icon = "fas fa-envelope-square"
     footer = true
     sharethis = true

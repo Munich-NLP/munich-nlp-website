@@ -1,0 +1,59 @@
+{{ $events := where .context.Pages.ByDate "Section" .context.Section }}
+{{ $upcoming := where $events "Params.date" "ge" time.Now }}
+{{ $past := where $events "Params.date" "lt" time.Now }}
+
+<div id="upcomingevents"></div>
+<div class="row section featured topspace">
+<h2 class="section-title">
+    <span>Upcoming Events</span>
+</h2>
+
+{{ if eq (len $upcoming) 0 }}
+    <div class="announcement">We currently have no events planned. Stay tuned! 🥨</div>
+{{ else }}
+    {{ range $upcoming.ByDate }}
+        <div class="wrapper" id="{{ .Params.id }}">
+        <div class="img">
+            <img src={{ .Params.image }} alt="round">
+        </div>
+        <div class="event">
+            <h3>{{ .Params.title }}</h3>
+            <p>{{ .Params.summary }}</p>
+            <p><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
+            <!-- <p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p> -->
+        </div>
+        </div>
+    {{ end }}
+{{ end }}
+
+<div id="pastevents"></div>
+<div class="row section featured topspace">
+    <h2 class="section-title">
+        <span>Past Events</span>
+    </h2>
+
+    {{ $allEvents := .allEvents }}
+    {{ range $k, $v := $past.ByDate.Reverse }}
+        {{ if and (eq $k .Site.Params.pastEventsPreview) (not $allEvents)}}
+            {{ break }}
+        {{ end }}
+        <div class="wrapper" id="{{ .Params.id }}">
+        <div class="img">
+            <img src={{ $v.Params.image }} alt="round">
+        </div>
+        <div class="event">
+            <h3>{{ $v.Params.title }}</h3>
+            {{ if $v.Params.recording }}
+            <p>{{ $v.Params.summary }} | <a href="{{ .Params.recording }}">Youtube Recording</a></p>
+            {{ else }}
+            <p>{{ $v.Params.summary }}</p>
+            {{ end }}
+            <p><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
+        </div>
+        </div>
+
+    {{ end }}
+    {{ if not $allEvents }}
+        <a href="/events" class="wrapper lead">See all events</a>
+    {{ end }}
+</div>

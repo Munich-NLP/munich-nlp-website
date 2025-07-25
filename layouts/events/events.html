@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <main id="main">
+  	<div class="container">
+      {{ $events := where .Site.Sections "Section" "events" }}
+      {{ with index $events 0 }}
+          {{ partial "events/events.html" (dict "context" . "allEvents" true) }}
+      {{ end }}
+  	</div>
+  </main>
+{{ end }}
