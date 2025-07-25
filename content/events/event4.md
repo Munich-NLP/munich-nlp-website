@@ -1,6 +1,6 @@
 +++
 title = "Language Models for Symbolic Music Generation"
-image = "images/bert-music-generation.png"
+image = "/images/bert-music-generation.png"
 summary = "Speaker: Dr. Tristan Behrens | Jul 6, 2022"
 recording = "https://www.youtube.com/watch?v=LZQIQxogFEk&ab_channel=Munich%F0%9F%A5%A8NLP"
 url = "/events/language-models-for-symbolic-music-generation"

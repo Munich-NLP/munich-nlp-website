@@ -1,6 +1,6 @@
 +++
 title = "Simplifying MLOps Stack"
-image = "images/mlops-stack.png"
+image = "/images/mlops-stack.png"
 summary = "Speaker: Andrey Cheptsov | Oct 13, 2022 18:00"
 recording = "https://www.youtube.com/watch?v=vdDdX-xf_mM&ab_channel=Munich%F0%9F%A5%A8NLP"
 url = "/events/simplifying-mlops-stack"

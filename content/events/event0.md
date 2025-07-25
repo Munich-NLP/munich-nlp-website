@@ -1,10 +1,10 @@
-+++ 
++++
 title = "Life after BERT: What do Other Muppets Understand about Language?"
-image = "images/ev_nlp_muppets_underst_vlad_lianin/theme_photo.png" 
-summary = "Speaker: Vladislav Lialin | May 27, 2022" 
-recording = "" 
-url = "/events/life-after-bert" 
-date = "2022-05-27" 
+image = "/images/ev_nlp_muppets_underst_vlad_lianin/theme_photo.png"
+summary = "Speaker: Vladislav Lialin | May 27, 2022"
+recording = ""
+url = "/events/life-after-bert"
+date = "2022-05-27"
 +++
 
 <!--more-->

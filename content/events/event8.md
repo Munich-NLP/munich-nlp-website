@@ -1,6 +1,6 @@
 +++
 title = "NLP for Social Good: A Survey with Use-Cases"
-image = "images/ev_nlp_nlp4socg_daryna_dem/theme_photo.jpg"
+image = "/images/ev_nlp_nlp4socg_daryna_dem/theme_photo.jpg"
 summary = "Speaker: Daryna Dementieva | Oct 26, 2022 18:00"
 recording = "https://www.youtube.com/watch?v=B-LBo-w4CrA"
 url = "/events/nlp-for-social-good-survey"

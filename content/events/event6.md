@@ -1,6 +1,6 @@
 +++
 title = "Transformers in All Glory Details"
-image = "images/transformers.png"
+image = "/images/transformers.png"
 summary = "Speaker: Dr. Lucas Beyer | Oct 13, 2022 16:15"
 recording = "https://www.youtube.com/watch?v=dqb4U-QzMbs&ab_channel=Munich%F0%9F%A5%A8NLP"
 url = "/events/transformers-in-all-glory-details"

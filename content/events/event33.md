@@ -1,6 +1,6 @@
 +++
 title = "GenerataX MiniConference"
-image = "images/ev_generatax/theme_photo.png"
+image = "/images/ev_generatax/theme_photo.png"
 summary = "Conference | June 15, 2023 15:30-19:30"
 recording = ""
 url = "/events/GenerataX"
