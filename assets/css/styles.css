@@ -240,6 +240,11 @@ a:hover {
   order: 0;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 /* Michelle's addition for positioning speaker's image */
 img[alt$=">"] {
   float: right;
