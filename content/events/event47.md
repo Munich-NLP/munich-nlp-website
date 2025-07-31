@@ -4,11 +4,13 @@ image = "/images/ev_saidov_phi/theme_photo.jpeg"
 summary = "Speaker: Marat Saidov | July 29, 2025 19:00-20:00"
 url = "/events/marat-saidov-phi"
 date = "2025-07-29"
+recording = "https://youtu.be/E9vBkZXNUBY"
 +++
 
+{{< youtube "E9vBkZXNUBY" >}}
 
-### Save the Date!
-July 29th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/bCuya2mKts?event=1384949135681126450).
+<!-- ### Save the Date!
+July 29th, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/bCuya2mKts?event=1384949135681126450). -->
 
 
 
