@@ -4,11 +4,13 @@ image = "/images/ev_acl25/theme_photo.png"
 summary = "Speaker: Dr. Michael A. Hedderich, Zhijing Jin (PhD) and Lukas Edman | Jul 22, 2025 19:00-20:00"
 url = "/events/acl-25-acc-paper-disc"
 date = "2025-07-22"
+recording = "https://youtu.be/vDQyN68Pxs0"
 +++
 
 
-### Save the Date!
-July 22nd, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1383134714818330826).
+{{< youtube "vDQyN68Pxs0" >}}
+<!-- ### Save the Date!
+July 22nd, 2025 19:00-20:00 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1383134714818330826). -->
 
 
 
