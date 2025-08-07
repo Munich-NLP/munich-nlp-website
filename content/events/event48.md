@@ -4,11 +4,13 @@ image = "/images/ev_geuter_gsi/theme_photo.png"
 summary = "Speaker: Jonathan Geuter | Aug 7, 2025 20:30-21:30"
 url = "/events/geuter-guided-speculative-inference"
 date = "2025-08-07"
+recording = "https://www.youtube.com/watch?v=5RPibXpygmE"
 +++
 
 
-### Save the Date!
-August 7th, 2025 20:30-21:30 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1392427519025872907).
+{{< youtube "5RPibXpygmE" >}}
+<!-- ### Save the Date!
+August 7th, 2025 20:30-21:30 -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1392427519025872907). -->
 
 
 
