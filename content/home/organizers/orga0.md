@@ -1,6 +1,6 @@
 +++ 
 name = "Philipp Koch"
-bio = "How can we improve NLU even further?"
+bio = "Background in CS, Stats, and Linguistics. Interested in LLM-based zero-shot classification"
 res_int = "NLU, NLG, Evaluation, Statistics and Linguistics"
 image = "images/about_us_photos/philipp.png"
 linkedin = "https://www.linkedin.com/in/phlkch/"
