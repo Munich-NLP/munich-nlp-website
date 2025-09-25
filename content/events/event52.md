@@ -6,12 +6,12 @@ url = "/october25-meetup"
 date = "2025-10-07"
 +++
 
-### Save the Date!
-October zth, 2025 6pm CEST -- 9 pm CEST [Munich🥨NLP Discord Server](https://discord.gg/MwbmwHwMuN?event=1419965510841274408).
 
 ### RSVP
 RSVP on [meetup.com](https://www.meetup.com/munich-nlp/events/311222090)!
 
+### Save the Date!
+October 7th, 2025 6pm CEST -- 9 pm CEST
 
 ### Location
 Oettingenstr. 67, 80538 München, Room 151 - [Google Maps Link](https://maps.app.goo.gl/QfWyUk53cB7s7od69)
