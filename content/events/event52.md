@@ -1,5 +1,5 @@
 +++
-title = "October '25 Meetup: Bavarian NLP"
+title = "October '25 Meetup: Munich🥨NLP x MCML"
 image = "/images/ev_oct25meetup/theme_photo.png"
 summary = "Speaker:  | Oct 7, 2025 18:00-21:00"
 url = "/october25-meetup"
