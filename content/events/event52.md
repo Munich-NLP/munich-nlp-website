@@ -44,7 +44,7 @@ Begin of the event 6pm, Oettingenstrasse 67, Room 151
 
 [**Verena Blaschke**](https://verenablaschke.github.io/) is a PhD student at the MaiNLP research group (LMU Munich), supervised by Barbara Plank and co-supervised by Hinrich Schütze. Her research currently focuses on NLP for dialects and low-resource language varieties.
 
-Previously, I completed a Bachelor’s and Master’s degree in computational linguistics at the University of Tübingen, where I was also part of Johannes Dellert’s team developing software for machine-assisted historical linguistics. She has also completed an internship in Apple’s ML research group, working on crosslingual NLP.
+Previously, she completed a Bachelor’s and Master’s degree in computational linguistics at the University of Tübingen, where she was also part of Johannes Dellert’s team developing software for machine-assisted historical linguistics. She has also completed an internship in Apple’s ML research group, working on crosslingual NLP.
 
 ![Jenya Sukhodolskaya ><](https://media.licdn.com/dms/image/v2/C4E03AQF-sJ17lxmpvw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660297728031?e=1761782400&v=beta&t=Q7c3H2BM1Y0yik0Ajd9rX-JatxObF0Aiv5grxFyPE4M)
 
