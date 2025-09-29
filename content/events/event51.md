@@ -4,6 +4,7 @@ image = "/images/ev_zehle_capo/theme_photo.png"
 summary = "Speaker: Tom Zehle | Sep 4, 2025 19:00-20:00"
 url = "/events/zehle-capo-cost-aware-prompt-optimization"
 date = "2025-09-04"
+recording = "https://youtu.be/8OZBdfQsZmA"
 +++
 
 ### Save the Date!
