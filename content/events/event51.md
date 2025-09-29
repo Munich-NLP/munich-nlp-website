@@ -7,8 +7,9 @@ date = "2025-09-04"
 recording = "https://youtu.be/8OZBdfQsZmA"
 +++
 
-### Save the Date!
-September 4th, 2025 7pm CEST -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1404461233071194205).
+<!-- ### Save the Date!
+September 4th, 2025 7pm CEST -- [Munich🥨NLP Discord Server](https://discord.gg/qEcmhgGu43?event=1404461233071194205). -->
+{{< youtube "8OZBdfQsZmA" >}}
 
 
 
