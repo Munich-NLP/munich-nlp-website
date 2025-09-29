@@ -21,6 +21,4 @@ LLMs have shown to be capable of solving a wide range of tasks, yet their perfor
 
 ### Speakers
 
-![Tom Zehle ><](https://media.licdn.com/dms/image/v2/D4E03AQG7rQRO_xYs5Q/profile-displayphoto-shrink_200_200/B4EZZnPN8sHoAg-/0/1745488765226?e=1758758400&v=beta&t=l7sHfEnJSJlIk1H_jp616V3WWNCibbd-yq6Uv4kEiKg)
-
 [**Tom Zehle**](https://www.linkedin.com/in/tom-zehle/) is a Master's student in Statistics & Data Science at LMU Munich and currently works as a Data Scientist at Airbus. He will begin his PhD this October at the ELLIS Institute in Tübingen, where his doctoral research will focus on specialization techniques for generalist foundation models, with a particular emphasis on prompt optimization, as well as finetuning and in-context learning. Together with Timo Heiß and Moritz Schlager, he co-developed CAPO and Promptolution, exploring practical and cost-efficient approaches to automated prompt optimization.
