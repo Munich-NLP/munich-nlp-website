@@ -27,6 +27,11 @@
        <a href="mailto:{{ .Params.mail }}" target="_blank">
          <i class='fas fa-envelope-square' style='font-size:24px;color:black'></i></a>
      {{ end }}
+
+     {{ if .Params.website }}
+       <a href="{{ .Params.website }}" target="_blank">
+         <i class='fas fa-link' style='font-size:24px;color:black'></i></a>
+     {{ end }}
    </div>
  </div>
  {{ end }}

@@ -7,4 +7,5 @@ linkedin = "https://www.linkedin.com/in/daryna-dementieva/"
 github = "https://github.com/dardem"
 twitter = "@iamdddaryna"
 mail = "daryna.dementieva@tum.de"
+website = "https://dardem.github.io/"
 +++
