@@ -1,10 +1,10 @@
 +++ 
-name = "Nikola Selic"
-bio = "Developing NLP technologies, LLMs, and semantic extraction techniques for systems."
-res_int = "NLP, LLMs, ML4Sys, CodeGen"
-image = "images/about_us_photos/nikola_mucnlp.jpg"
-linkedin = "https://www.linkedin.com/in/nikola-selic/"
-github = "https://github.com/Selich"
-twitter = "https://x.com/nikola_selic"
-mail = "selic.work@gmail.com"
-+++ 
+name = "Ekaterina (Katya) Artemova"
+bio = "NLP Researcher @ Toloka AI"
+res_int = "LLM evaluation, multilinguality, culture-specific NLP"
+image = "images/about_us_photos/katya_mucnlp.jpg"
+linkedin = "https://www.linkedin.com/in/ekaterina-artemova-3b794926"
+github = "https://github.com/artemovae"
+twitter = "@katya-art.bsky.social"
+mail = "katya-art at toloka dot ai"
++++

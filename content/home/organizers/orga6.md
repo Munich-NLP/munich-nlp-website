@@ -1,10 +1,10 @@
 +++ 
-name = "Ekaterina (Katya) Artemova"
-bio = "NLP Researcher @ Toloka AI"
-res_int = "LLM evaluation, multilinguality, culture-specific NLP"
-image = "images/about_us_photos/katya_mucnlp.jpg"
-linkedin = "https://www.linkedin.com/in/ekaterina-artemova-3b794926"
-github = "https://github.com/artemovae"
-twitter = "@katya-art.bsky.social"
-mail = "katya-art at toloka dot ai"
+name = "Diego Miguel Lozano"
+bio = "Interested in language, computers and the intersection between them."
+res_int = "NLP, XAI, Evaluation, AI Ethics"
+image = "images/about_us_photos/diego_mucnlp.png"
+linkedin = "https://www.linkedin.com/in/diegomiguelloz/"
+github = "https://github.com/dmlls"
+twitter = ""
+mail = "hello@diegomiguel.me"
 +++

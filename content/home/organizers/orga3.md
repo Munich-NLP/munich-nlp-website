@@ -1,10 +1,9 @@
 +++ 
-name = "Diego Miguel Lozano"
-bio = "Interested in language, computers and the intersection between them."
-res_int = "NLP, XAI, Evaluation, AI Ethics"
-image = "images/about_us_photos/diego_mucnlp.png"
-linkedin = "https://www.linkedin.com/in/diegomiguelloz/"
-github = "https://github.com/dmlls"
-twitter = ""
-mail = "hello@diegomiguel.me"
+name = "Tomas Ruiz"
+bio = "NLP researcher @ LMU CSS"
+res_int = "Scalable inference with LLMs, Multimodal LLMs"
+image = "images/about_us_photos/tomas_mucnlp.png"
+linkedin = "https://www.linkedin.com/in/tomas-ruiz-649907b3/"
+github = "https://github.com/tomasruizt"
+mail = "tomas.ruiz.te at gmail dot com"
 +++
