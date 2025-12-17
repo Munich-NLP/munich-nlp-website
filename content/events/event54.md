@@ -1,7 +1,7 @@
 +++
-title = "January '26 Meetup: Munich NLP x Eraneos"
-image = "/images/ev_jan26meetup/jan_8_meetup.jpeg"
-summary = "Talks on production LLMs | Jan 8, 2026 18:30"
+title = "Munich🥨NLP Meetup: New Year Kick Off"
+image = "/images/ev_jan26meetup/theme_photo.png"
+summary = "Talks on production LLMs | Jan 8, 2026 18:30 | Eraneos office"
 url = "/jan26-meetup"
 date = "2026-01-08T18:30:00+01:00"
 +++

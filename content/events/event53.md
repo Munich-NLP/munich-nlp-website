@@ -6,11 +6,6 @@ url = "/dec25-meetup"
 date = "2025-12-11"
 +++
 
-### RSVP
-Details coming soon.
-
-### Save the Date!
-December 11, 2025 — 18:00 onward at KI performance Munich.
 
 ### Location
 KI performance Munich, Oberanger 44, 80331 Munich. 2nd floor
@@ -38,13 +33,6 @@ Extended panel or group Q&A
 from 8:40 PM
 Drinks, networking & open discussion — the perfect way to close the year with the Munich NLP community.
 
-💡 Why you shouldn't miss it:
-Dive into cutting-edge NLP use cases
-Get inspired by experts pushing the boundaries of multilingual and agentic NLP
-Connect with brilliant minds across research and industry
-Celebrate the end of the year with great talks, great people and great energy
-
-👉 Participation is free, but spots are limited — please register in advance so we can plan food & drinks accordingly.
 
 A big thank you to The Residency for generously sponsoring the pizzas and supporting the Munich NLP community.
 https://www.linkedin.com/school/live-the-residency/
