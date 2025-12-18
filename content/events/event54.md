@@ -1,35 +1,39 @@
 +++
-title = "Munich🥨NLP Meetup: New Year Kick Off"
-image = "/images/ev_jan26meetup/theme_photo.png"
-summary = "Talks on production LLMs | Jan 8, 2026 18:30 | Eraneos office"
-url = "/jan26-meetup"
-date = "2026-01-08T18:30:00+01:00"
+title = "December '25 Meetup: Munich🥨NLP"
+image = "/images/ev_dec25meetup/dec_meetup.jpeg"
+summary = "Speakers: Daryna Dementieva & Christoph Bensch | Dec 11, 2025"
+url = "/dec25-meetup"
+date = "2025-12-11"
 +++
 
-### RSVP
-RSVP on [meetup.com](https://www.meetup.com/munich-nlp/events/312380585)!
-
-### Save the Date!
-January 8, 2026 — 18:30 at the Eraneos office in Munich.
 
 ### Location
-Klenzestraße 41, Munich (ERANEOS Office)
+KI performance Munich, Oberanger 44, 80331 Munich. 2nd floor
 
-### Agenda
-**From Scratch to Production: LLM-Based E2E Service in Swiss Banking**  
-Speakers: Jakob Klement, David Satomi, Fabian Stermann  
-Handling over 60k customer interactions weekly across four languages while meeting strict regulations. A deep dive into building and shipping an end-to-end LLM voice/chatbot that replaced a legacy IVR at a Swiss bank, tackling technical and regulatory hurdles and raising first-solution rates from ~40% to 85%+.
+### About this Event
+Agenda:
+6:00 – 6:30 PM
+Welcome — reconnect with the NLP community, meet new faces and warm up for an evening dedicated to language technologies and real-world impact.
+6:30 – 6:40 PM
+Opening Talk — KI performance
+6:40 – 6:50 PM
+Opening Talk — Munich NLP
+6:50 – 7:15 PM
+Talk 1: “Responsible and Multilingual NLP for Real-World Impact”
+Speaker: Daryna Dementieva (Munich NLP)
+A deep dive into how multilingual NLP can shape safer, more inclusive online ecosystems across cultures and languages.
+7:15 – 8:00 PM
+Pizza break & networking
+8:00 – 8:20 PM
+Talk 2: “Multi-Agent NLP in Production – Conversational Agents, Automation and Evaluation in Practice”
+Speaker: Christoph Bensch, Senior AI Engineer @ KI performance
+A hands-on look at how agentic NLP systems operate in production — from automation workflows to evaluation techniques.
+8:20 – 8:40 PM
+Extended panel or group Q&A
+from 8:40 PM
+Drinks, networking & open discussion — the perfect way to close the year with the Munich NLP community.
 
-**Beyond Retrieval: The Technical Core of Reliable Agent Reasoning**  
-Speaker: Ludovic Tessier  
-Why retrieval alone is solved—and what’s required for reliable agent reasoning: core components for analyzing, synthesizing, evaluating, and acting on retrieved data.
 
-### Networking
-Community networking session after the talks. All are welcome.
-
-### Sponsors
-Thanks to Eraneos for hosting the event.
-
-### Organizer
-Munich NLP
+A big thank you to The Residency for generously sponsoring the pizzas and supporting the Munich NLP community.
+https://www.linkedin.com/school/live-the-residency/
 
