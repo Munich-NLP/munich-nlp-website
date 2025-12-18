@@ -1,7 +1,7 @@
 +++
-title = "January '26 Meetup: Munich🥨NLP"
+title = "January '26 Meetup: Munich🥨NLP X LRZ X Cerebras"
 image = "/images/ev_jan26lrz/theme_photo.png"
-summary = "Building Multilingual LLMs & Hands on cerebras Workshop | Jan 20, 2026 18:00 | LRZ Garching"
+summary = "Speakers: Michael Hoffmann, Jophin John and Gokul Ramakrishnan | Jan 20, 2026 18:00 "
 url = "/jan26-lrz-meetup"
 date = "2026-01-20T18:00:00+01:00"
 +++
@@ -30,6 +30,4 @@ LRZ, Boltzmannstr. 1, 85748 Garching bei München
 ### Sponsors
 Thanks to LRZ and Cerebras for hosting the event.
 
-### Organizer
-Munich NLP
 

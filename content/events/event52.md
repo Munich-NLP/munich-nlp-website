@@ -1,7 +1,7 @@
 +++
 title = "October '25 Meetup: Munich🥨NLP x MCML"
 image = "/images/ev_oct25meetup/theme_photo.png"
-summary = "Speaker:  | Oct 7, 2025 18:00-21:00"
+summary = "Speaker: Verena Blaschke and Jenya Sukhodolskaya | Oct 7, 2025 18:00-21:00"
 url = "/october25-meetup"
 date = "2025-10-07"
 +++

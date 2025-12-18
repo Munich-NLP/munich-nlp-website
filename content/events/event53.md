@@ -1,7 +1,7 @@
 +++
 title = "January '26 Meetup: Munich🥨NLP x Eraneos"
 image = "/images/ev_jan26_meetup/theme_photo.png"
-summary = "Speaker:  | Jan 8, 2025 18:30-21:00"
+summary = "Speakers: Jakob Klement, David Satomi, Fabian Stermann  | Jan 8, 2025 18:30-21:00"
 url = "/january26-meetup"
 date = "2026-01-08"
 +++

@@ -1,5 +1,5 @@
 +++
-title = "December '25 Meetup: Munich🥨NLP"
+title = "December '25 Meetup: Munich🥨NLP X KI performance X The Residency"
 image = "/images/ev_dec25meetup/dec_meetup.jpeg"
 summary = "Speakers: Daryna Dementieva & Christoph Bensch | Dec 11, 2025"
 url = "/dec25-meetup"
