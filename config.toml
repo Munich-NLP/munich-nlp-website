@@ -98,7 +98,7 @@ theme = "hugo-initio"
     network = "github"
 [[params.social]]
     title = "email"
-    url = "mailto:munichnlp@gmail.com"
+    url = "mailto:info@munich-nlp.com"
     icon = "fas fa-envelope-square"
     footer = true
     sharethis = true
