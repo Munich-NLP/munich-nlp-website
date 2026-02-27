@@ -18,7 +18,7 @@ theme = "hugo-initio"
     DateForm = ""
     author = ""
 
-    production = false
+    production = true
     redirectUrl = "https://www.munich-nlp.com/"
 
     showSubheader = true
