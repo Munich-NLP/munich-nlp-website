@@ -14,7 +14,7 @@ March 30th, 2026 18:00 — 19:30
 
 
 ### About this Event
-Tiny Aya is designed with a simple goal: to make powerful AI systems accessible to people everywhere, not just those with access to large-scale compute or dominant languages. In this talk, I will present Tiny Aya, the newest member of the Aya model family, focusing on how we build efficient multilingual models. I will discuss the challenges of scaling AI across languages, particularly in low-resource settings, and how techniques in efficient training, multilingual data curation, and model design help address them.
+Tiny Aya is designed with a simple goal: to make powerful AI systems accessible to people everywhere, not just those with access to large-scale compute or dominant languages. In this talk, he will present Tiny Aya, the newest member of the Aya model family, focusing on how we build efficient multilingual models. He will discuss the challenges of scaling AI across languages, particularly in low-resource settings, and how techniques in efficient training, multilingual data curation, and model design help address them.
 
 
 ### Speaker
