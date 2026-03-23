@@ -1,8 +1,8 @@
 +++
 title = "March Online Meetup: Ahmet Üstün from Cohere"
-image = "/images/ev_ustuen_mar26/theme_photo.png"
+image = "/images/ev_uestuen_mar26/theme_photo.png"
 summary = "Speakers: Ahmet Üstün | Mar 30, 2026 18:00 "
-url = "/ustuen-mar-26"
+url = "/uestuen-mar-26"
 date = "2026-03-30T18:00:00+01:00"
 +++
 
