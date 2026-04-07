@@ -4,13 +4,14 @@ image = "/images/ev_ustuen_mar26/theme_photo.png"
 summary = "Speakers: Ahmet Üstün | Mar 30, 2026 18:00 "
 url = "/ustuen-mar-26"
 date = "2026-03-30T18:00:00+01:00"
+recording = "https://youtu.be/F1wVVFPIrnE"
 +++
 
+{{< youtube F1wVVFPIrnE >}}
 
 
-
-#### Save the Date! - [RSVP](https://www.meetup.com/munich-nlp/events/313830929/)
-March 30th, 2026 18:00 — 19:30
+<!-- #### Save the Date! - [RSVP](https://www.meetup.com/munich-nlp/events/313830929/)
+March 30th, 2026 18:00 — 19:30 -->
 
 
 ### About this Event
