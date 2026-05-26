@@ -1,5 +1,5 @@
 +++
-title = "Munich🥨NLPxXpeng: Synthetic Data Generation"
+title = "Munich🥨NLP x Xpeng: Synthetic Data Generation"
 image = "/images/ev_xpeng_26/theme_photo.png"
 summary = "Speakers: Florent Duême, Galina Lavrenteva and Raoyuan Zhao | June 10th, 2026 18:00"
 url = "/xpeng_26"
