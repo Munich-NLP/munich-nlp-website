@@ -31,9 +31,9 @@ date = "2026-06-10T18:00:00+01:00"
 
   Discover how XPeng generates large-scale synthetic dialogues and augments them with realistic acoustic environments for voice assistant training and evaluation. Built on [SDialog](https://arxiv.org/abs/2506.10622), this talk covers the full pipeline: LLM-orchestrated persona-driven text generation, controlled evaluation of dialogue quality, and generative audio methods for simulating background noise and spatial sound conditions. The result is a scalable framework improving both NLU and ASR robustness.
 
-  [Florent Duême](https://www.linkedin.com/in/florent-du%C3%AAme/) focuses on synthetic text data generation and evaluation—designing persona-driven dialogue orchestration, scenario scripting, and automated quality metrics.
+  [Florent Duême](https://www.linkedin.com/in/florent-dueme/) focuses on synthetic text data generation and evaluation—designing persona-driven dialogue orchestration, scenario scripting, and automated quality metrics.
 
-  [Galina Lavrenteva](https://www.linkedin.com/in/galina-lavrenteva/) specializes in audio augmentation, leveraging generative audio to simulate realistic acoustic environments and noise conditions.
+  [Galina Lavrenteva](https://www.linkedin.com/in/glavrentyeva/) specializes in audio augmentation, leveraging generative audio to simulate realistic acoustic environments and noise conditions.
 
 
       
