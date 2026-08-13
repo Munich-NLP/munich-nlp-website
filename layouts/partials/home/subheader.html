@@ -1,9 +1,39 @@
 {{ range where .Site.Pages "Type" "subheader" }}
-<div class="row section topspace" id="about">
-    <div class="col-md-12">
-        <div class="lead text-center text-muted">
-           {{ .Content }}
+<section class="about-section topspace" id="about">
+    <div class="about-layout">
+        <div class="about-copy">
+            <h2>What is <span>Munich🥨<br>NLP</span>?</h2>
+            {{ .Content }}
+        </div>
+        <div class="about-photo">
+            {{ with .Params.image }}
+                <div class="about-photo-frame">
+                    <img class="about-photo-image" src="{{ . }}" alt="Munich NLP community">
+                </div>
+            {{ else }}
+                <div class="about-photo-placeholder">
+                    <span>Community photo coming soon</span>
+                </div>
+            {{ end }}
         </div>
     </div>
-</div> <!-- / section -->
+    <div class="about-stats" aria-label="Munich NLP community facts">
+        <div class="about-stat">
+            <strong>1000+</strong>
+            <span>Community Members</span>
+        </div>
+        <div class="about-stat">
+            <strong>May 2022</strong>
+            <span>Founded</span>
+        </div>
+        <div class="about-stat">
+            <strong>Online + Live</strong>
+            <span>Event Formats</span>
+        </div>
+        <div class="about-stat">
+            <strong>Munich</strong>
+            <span>Our Home</span>
+        </div>
+    </div>
+</section>
 {{ end }}

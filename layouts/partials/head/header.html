@@ -1,15 +1,17 @@
 <header id="header">
   <div id="head" class="parallax" data-parallax-speed="2" style="background-image:url('{{ .Site.BaseURL }}{{ .Site.Params.banner }}');">
-    <h1 id="logo" class="text-center">
-      <a href="/">
-        <img class='img-{{ .Site.Params.avatarclass | default "noborder"}}' src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+    <div id="logo" class="site-hero-content text-center">
+      <a class="site-logo" href="/">
+        <img class="img-{{ .Site.Params.avatarclass | default "noborder"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="Munich NLP">
       </a>
-      <!-- <span class="title"><a href="/">{{ .Site.Params.name }}</a></span> -->
-      <span class="tagline">{{ .Site.Params.description }}<br>
-        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
-      </span>
-   </h1>
-</div>
+      {{ if .IsHome }}
+        <p class="site-tagline">Munich’s community for NLP, LLMs &amp; AI</p>
+        <p class="site-hero-pillars">Research · Industry · Community</p>
+        <a class="site-hero-cta" href="/events/">Explore upcoming events</a>
+        <a class="site-hero-credit" href="https://unsplash.com/photos/FZZ1rJc1FM4" target="_blank" rel="noopener noreferrer">Photo: Julian Ostarek · Unsplash</a>
+      {{ end }}
+    </div>
+  </div>
 
-{{ partial "head/menu.html" . }}
+  {{ partial "head/menu.html" . }}
 </header>

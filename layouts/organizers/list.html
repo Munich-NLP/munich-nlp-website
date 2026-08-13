@@ -1,0 +1,78 @@
+{{ define "main" }}
+<main id="main" class="organizers-page">
+    <div class="container">
+        <header class="organizers-header">
+            <span class="organizers-eyebrow">The people behind the community</span>
+            <h1>Meet the Munich🥨NLP organizers</h1>
+            <p>Our volunteer team brings together researchers, practitioners, and NLP enthusiasts through talks, discussions, demos, and meet-ups in Munich.</p>
+        </header>
+
+        <section class="organizers-group" aria-labelledby="current-organizers">
+            <div class="organizers-group-heading">
+                <h2 id="current-organizers">Current organizers</h2>
+                <span>{{ len .Pages }} community builders</span>
+            </div>
+            <div class="organizers-grid">
+                {{ $organizerOrder := slice "orga0" "orga1" "orga2" "orga5" "orga8" "orga7" "orga6" "orga4" "orga3" }}
+                {{ range $organizerOrder }}
+                    {{ with site.GetPage (printf "/home/organizers/%s" .) }}
+                    <article class="organizer-card">
+                        <div class="organizer-profile">
+                            <div class="organizer-photo">
+                                <img src="{{ .Params.image | relURL }}" alt="{{ .Params.name }}" loading="lazy">
+                            </div>
+                            <div class="organizer-intro">
+                                <h3>{{ .Params.name }}</h3>
+                                <p class="organizer-bio">{{ .Params.bio }}</p>
+                            </div>
+                        </div>
+                        <nav class="organizer-links" aria-label="{{ .Params.name }} links">
+                            {{ with .Params.linkedin }}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            {{ end }}
+                            {{ with .Params.github }}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            {{ end }}
+                            {{ with .Params.twitter }}
+                                {{ if hasPrefix . "http" }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="X">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                {{ end }}
+                            {{ end }}
+                            {{ with .Params.mail }}
+                                <a href="{{ if hasPrefix . "mailto:" }}{{ . }}{{ else }}mailto:{{ . }}{{ end }}" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            {{ end }}
+                            {{ with .Params.website }}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            {{ end }}
+                        </nav>
+                        <div class="organizer-interests">
+                            <span>Interests</span>
+                            <p>{{ .Params.res_int }}</p>
+                        </div>
+                    </article>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </section>
+
+        <aside class="organizers-alumni">
+            <div>
+                <span>Community alumni</span>
+                <h2>Built by many</h2>
+                <p>We are grateful to the former team members who helped Munich NLP grow.</p>
+            </div>
+            <a href="/organizers-former/">View past affiliated members</a>
+        </aside>
+    </div>
+</main>
+{{ end }}

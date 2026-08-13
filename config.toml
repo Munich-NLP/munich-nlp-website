@@ -23,7 +23,7 @@ theme = "hugo-initio"
 
     showSubheader = true
     showEvents = true
-    showOrganizers = true
+    showOrganizers = false
     showPartners = false
 
     showFooterContact = false
@@ -39,16 +39,12 @@ theme = "hugo-initio"
     url = "/#about"
     weight = 1
 [[menu.main]]
-    name = "Upcoming events"
-    url = "/#upcomingevents"
+    name = "Events"
+    url = "/events/"
     weight = 5
 [[menu.main]]
-    name = "Past events"
-    url = "/#pastevents"
-    weight = 9
-[[menu.main]]
     name = "Organizers"
-    url = "/#organizers"
+    url = "/organizers/"
     weight = 17
 
 [params.disqus]
@@ -62,45 +58,31 @@ theme = "hugo-initio"
     trackerID = "GA-000000000-0"
 
 [[params.social]]
+    title = "luma"
+    url = "https://luma.com/munichnlp"
+    icon = "far fa-calendar-alt"
+    footer = true
+    sharethis = true
+    network = "luma"
+[[params.social]]
+    title = "instagram"
+    url = "https://www.instagram.com/munich.nlp/"
+    icon = "fab fa-instagram"
+    footer = true
+    sharethis = true
+    network = "instagram"
+[[params.social]]
     title = "discord"
-    url = "https://discord.com/invite/BgFaZgZ38N"
+    url = "https://discord.gg/XWjVzYvjAu"
     icon = "fab fa-discord"
     footer = true
     sharethis = true
     network = "discord"
 [[params.social]]
-    title = "youtube"
-    url = "https://www.youtube.com/channel/UCmpRQbcw7dOiXSyWpGYwk3Q"
-    icon = "fab fa-youtube"
-    footer = true
-    sharethis = true
-    network = "youtube"
-[[params.social]]
-    title = "twitter"
-    url = "https://twitter.com/munichnlp"
-    icon = "fab fa-twitter-square"
-    footer = true
-    sharethis = true
-    network = "twitter"
-[[params.social]]
     title = "linkedin"
     url = "https://www.linkedin.com/company/munich-nlp/"
-    icon = "fab fa-linkedin"
+    icon = "fab fa-linkedin-in"
     footer = true
     sharethis = true
     network = "linkedin"
-[[params.social]]
-    title = "github"
-    url = "https://github.com/Munich-NLP"
-    icon = "fab fa-github"
-    footer = true
-    sharethis = true
-    network = "github"
-[[params.social]]
-    title = "email"
-    url = "mailto:info@munich-nlp.com"
-    icon = "fas fa-envelope-square"
-    footer = true
-    sharethis = true
-    network = "email"
 

@@ -6,14 +6,19 @@
     {{ end }}
     <div class="container">
       <div id="{{ .Params.id }}"></div>
+
       {{ if .Site.Params.showSubheader }}
         {{ partial "home/subheader.html" . }}
       {{ end }}
 
+      {{ if .Site.Params.showEvents }}
+        {{ partial "home/event-carousel.html" . }}
+        {{ partial "home/collaborators.html" . }}
+        {{ partial "home/partner-cta.html" . }}
+      {{ end }}
+
       {{ range .Site.Sections }}
-        {{ if and (eq .Type "events") (.Site.Params.showEvents) }}
-          {{ partial "events/events.html" (dict "context" . "allEvents" false) }}
-        {{ else }}
+        {{ if ne .Type "events" }}
           {{ range .Sections.ByWeight }}
             {{ $section := . }}
             {{ if index site.Params (printf "%s%s" "show" (strings.FirstUpper (string $section.Type))) }}
