@@ -1,5 +1,15 @@
 <header id="header">
-  <div id="head" class="parallax" data-parallax-speed="2" style="background-image:url('{{ .Site.BaseURL }}{{ .Site.Params.banner }}');">
+  <style>
+    #head {
+      background-image: url('{{ .Site.Params.banner | relURL }}');
+    }
+    @media (max-width: 768px) {
+      #head {
+        background-image: url('{{ .Site.Params.bannerMobile | default .Site.Params.banner | relURL }}');
+      }
+    }
+  </style>
+  <div id="head" class="parallax" data-parallax-speed="2">
     <h1 id="logo" class="text-center">
       <a href="/">
         <img class='img-{{ .Site.Params.avatarclass | default "noborder"}}' src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
