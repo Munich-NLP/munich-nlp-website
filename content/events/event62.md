@@ -1,7 +1,7 @@
 +++
 title = "Munich🥨NLP x SAP: Knowledge Graphs & Agents"
 image = "/images/ev_sap_26/theme_photo.png"
-summary = "Speakers: SAP (TBA) and Jakob Sturm | August 25th, 2026 18:00"
+summary = "Speakers: Riswan Lathif and Jakob Sturm | August 25th, 2026 18:00"
 url = "/sap_26"
 date = "2026-08-25T18:00:00+02:00"
 +++
@@ -10,7 +10,7 @@ date = "2026-08-25T18:00:00+02:00"
 
 
 ### Save the Date!
-​We’re thrilled to announce our next meetup, hosted in collaboration with SAP at their office, [Friedrich-Ludwig-Bauer-Str. 5, 85748 Garching bei München](https://www.google.com/maps/search/?api=1&query=Friedrich-Ludwig-Bauer-Str.+5%2C+85748+Garching+bei+M%C3%BCnchen) on Tuesday, August 25, 2026!
+​We’re thrilled to announce our next meetup, hosted in collaboration with SAP at their office, [Friedrich-Ludwig-Bauer-Str. 5, 85748 Garching bei München](https://www.google.com/maps/search/?api=1&query=48.2641899%2C11.6610184&query_place_id=ChIJjQdwhPNynkcRq4zcCKYp2aw) on Tuesday, August 25, 2026!
 
 ⚠️ **Please register on Luma:** [https://luma.com/b6n5x3by](https://luma.com/b6n5x3by?utm_source=meetup) — a Meetup RSVP alone does not reserve a place. Attendance is confirmed only after registration and approval through Luma, since capacity at the SAP office is limited.
 
@@ -24,16 +24,18 @@ What role do knowledge graphs play as LLMs get longer context windows and AI age
 #### Agenda - TIMETABLE:
  - ​17:30 | Doors open
  - 17:50 – 18:00 | Welcome and introduction (SAP, MunichNLP)
- - 18:00 – 18:45 | Talk 1: "Engineering Autonomous Industry Agents in Production"
+ - 18:00 – 18:45 | Talk 1: "Custom AI in Action"
  - ​18:45 – 18:50 | Short break
  ​ - 18:50 – 19:35 | Talk 2: "Needle in a Knowledge Graph"
  - ​19:35 – 21:00 | Networking & drinks 🍕
 
 #### Talks
 
-- _**SAP (speaker TBA): Engineering Autonomous Industry Agents in Production**_
+- _**Riswan Lathif: Custom AI in Action**_
 
-  How do we move beyond promising AI prototypes and turn autonomous agents into productive, reliable workflows? This talk explores the engineering challenges involved in bringing autonomous AI agents into real-world industry environments — the journey from experimentation to production, and the role of knowledge graphs in grounding AI systems and enabling robust real-world deployments.
+  SAP's customers are varied and cover a lot of industries. Thus they also have a need to build their own custom solutions to make the best out of SAP's standard software. This presentation shows how custom AI solutions can help leverage the available AI tools to add business value and discusses how we move beyond promising AI prototypes and turn autonomous agents into productive, reliable workflows.
+
+  Riswan is a principal software architect at Customer Industry Solutions, who specializes in building custom AI solutions. He worked in startups and the German space center DLR before joining SAP, and is an advocate of using AI responsibly to its full potential.
 
 
       
