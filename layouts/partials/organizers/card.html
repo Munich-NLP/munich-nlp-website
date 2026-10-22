@@ -11,29 +11,29 @@
     <nav class="organizer-links" aria-label="{{ .Params.name }} links">
         {{ with .Params.linkedin }}
             <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
+                {{ partial "icon.html" (dict "name" "linkedin-in") }}
             </a>
         {{ end }}
         {{ with .Params.github }}
             <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fab fa-github"></i>
+                {{ partial "icon.html" (dict "name" "github") }}
             </a>
         {{ end }}
         {{ with .Params.twitter }}
             {{ if hasPrefix . "http" }}
                 <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="X">
-                    <i class="fab fa-twitter"></i>
+                    {{ partial "icon.html" (dict "name" "twitter") }}
                 </a>
             {{ end }}
         {{ end }}
         {{ with .Params.mail }}
             <a href="{{ if hasPrefix . "mailto:" }}{{ . }}{{ else }}mailto:{{ . }}{{ end }}" aria-label="Email">
-                <i class="fas fa-envelope"></i>
+                {{ partial "icon.html" (dict "name" "envelope") }}
             </a>
         {{ end }}
         {{ with .Params.website }}
             <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
-                <i class="fas fa-link"></i>
+                {{ partial "icon.html" (dict "name" "link") }}
             </a>
         {{ end }}
     </nav>

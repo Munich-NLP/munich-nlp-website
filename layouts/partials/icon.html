@@ -1,0 +1,6 @@
+{{- $name := replaceRE `^(fab|fas|far) fa-` "" .name -}}
+{{- with index site.Data.icons $name -}}
+<svg class="site-icon{{ with $.class }} {{ . }}{{ end }}" viewBox="{{ .viewbox }}" width="16" height="16" aria-hidden="true" focusable="false"><use href="{{ printf "%s#%s" ("images/icons.svg" | relURL) $name }}"></use></svg>
+{{- else -}}
+  {{- errorf "Unknown site icon: %s" $name -}}
+{{- end -}}

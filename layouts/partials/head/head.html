@@ -2,16 +2,12 @@
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
 
 	<link rel="preload" href="{{ "fonts/roboto-mono-latin-300.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-	<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
 	<link rel="preconnect" href="https://code.jquery.com" crossorigin>
 	<link rel="preconnect" href="https://netdna.bootstrapcdn.com" crossorigin>
 	{{ $hero := resources.Get "images/munich-hero.webp" }}
 	{{ $heroMobile := $hero.Fill "768x640 Center webp q82" }}
 	<link rel="preload" href="{{ $heroMobile.RelPermalink }}" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
 	<link rel="preload" href="{{ $hero.RelPermalink }}" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
-	
-	<!-- Icons -->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
 	
 	{{ $bootstrap := resources.Get "css/vendor/bootstrap.css" }}
 	{{ $styles := resources.Get "css/styles.css" }}

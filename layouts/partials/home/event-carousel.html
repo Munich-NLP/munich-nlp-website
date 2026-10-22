@@ -27,10 +27,10 @@
             </div>
         </div>
         <a class="community-carousel-arrow community-carousel-arrow-prev" href="#community-carousel" role="button" data-slide="prev" aria-label="Previous photo">
-            <i class="fas fa-arrow-left"></i>
+            {{ partial "icon.html" (dict "name" "arrow-left") }}
         </a>
         <a class="community-carousel-arrow community-carousel-arrow-next" href="#community-carousel" role="button" data-slide="next" aria-label="Next photo">
-            <i class="fas fa-arrow-right"></i>
+            {{ partial "icon.html" (dict "name" "arrow-right") }}
         </a>
     </div>
     <div class="community-carousel-card">

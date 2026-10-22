@@ -21,7 +21,7 @@
 					<p class="follow-me-icons">
             {{ range .Site.Params.social }}
 							{{ if .footer }}
-								<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title | title }}"><i class="{{ .icon }} fa-1x" aria-hidden="true"></i></a>
+								<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title | title }}">{{ partial "icon.html" (dict "name" .icon) }}</a>
 							{{ end }}
             {{ end }}
 					</p>

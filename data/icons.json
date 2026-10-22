@@ -1,0 +1,38 @@
+{
+  "linkedin-in": {
+    "viewbox": "0 0 448 512"
+  },
+  "twitter": {
+    "viewbox": "0 0 512 512"
+  },
+  "github": {
+    "viewbox": "0 0 496 512"
+  },
+  "instagram": {
+    "viewbox": "0 0 448 512"
+  },
+  "discord": {
+    "viewbox": "0 0 448 512"
+  },
+  "arrow-left": {
+    "viewbox": "0 0 448 512"
+  },
+  "arrow-right": {
+    "viewbox": "0 0 448 512"
+  },
+  "envelope": {
+    "viewbox": "0 0 512 512"
+  },
+  "envelope-square": {
+    "viewbox": "0 0 448 512"
+  },
+  "link": {
+    "viewbox": "0 0 512 512"
+  },
+  "share-alt-square": {
+    "viewbox": "0 0 448 512"
+  },
+  "calendar-alt": {
+    "viewbox": "0 0 448 512"
+  }
+}

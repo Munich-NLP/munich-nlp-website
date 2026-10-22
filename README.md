@@ -17,7 +17,7 @@ After building, run `python3 scripts/check-seo.py public` to check the sitemap, 
 
 Event pages with a `[location]` block also receive Event structured data. Use the existing SAP and JetBrains event files as examples, and enter only confirmed venue details. Search Console ownership and sitemap submission are managed separately at [Google Search Console](https://search.google.com/search-console/); submit `https://munich-nlp.com/sitemap.xml` there.
 
-Roboto Mono and the existing Bootstrap stylesheet are served locally. Their licenses are included in `static/licenses/`.
+Roboto Mono and the existing Bootstrap stylesheet are served locally. Icons use a small SVG sprite extracted from Font Awesome Free 5.0.11, without an icon-rendering JavaScript dependency. Third-party licenses are included in `static/licenses/`.
 
 ## Downsize Images
 
