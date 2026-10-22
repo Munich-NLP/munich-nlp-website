@@ -1,3 +1,38 @@
+// Keep the calendar's scripts out of the initial page render. Templates stay
+// inert until the page has painted and the calendar enters the viewport.
+(function () {
+	var templates = document.querySelectorAll('.luma-calendar-template');
+	if (!templates.length) return;
+
+	function showCalendar(container) {
+		var template = container.querySelector('.luma-calendar-template');
+		if (!template) return;
+		container.appendChild(template.content.cloneNode(true));
+		template.remove();
+	}
+
+	function observeCalendars() {
+		if (!('IntersectionObserver' in window)) {
+			templates.forEach(function (template) { showCalendar(template.parentElement); });
+			return;
+		}
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (!entry.isIntersecting) return;
+				showCalendar(entry.target);
+				observer.unobserve(entry.target);
+			});
+		});
+		templates.forEach(function (template) { observer.observe(template.parentElement); });
+	}
+
+	function afterPageLoad() {
+		requestAnimationFrame(function () { requestAnimationFrame(observeCalendars); });
+	}
+	if (document.readyState === 'complete') afterPageLoad();
+	else window.addEventListener('load', afterPageLoad, { once: true });
+})();
+
 jQuery(document).ready(function ($) {
 	if ($.fn.carousel && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 		$('.carousel').carousel('pause');

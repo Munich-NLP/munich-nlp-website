@@ -1297,6 +1297,10 @@ img[alt$="round"]{
   text-underline-offset: .15em;
 }
 
+.luma-calendar {
+  min-height: 650px;
+}
+
 .luma-calendar iframe {
   display: block;
   width: 100%;
@@ -1308,6 +1312,10 @@ img[alt$="round"]{
 }
 
 @media (max-width: 767px) {
+  .luma-calendar {
+    min-height: 550px;
+  }
+
   .luma-calendar iframe {
     height: 550px;
   }
