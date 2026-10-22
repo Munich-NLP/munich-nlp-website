@@ -1,7 +1,7 @@
 +++ 
 name = "Nikola Selic"
 bio = "Developing NLP technologies, LLMs, and semantic extraction techniques for systems."
-res_int = "NLP, LLMs, ML4Sys, CodeGen"
+res_int = "NLP, LLMs, ML4Sys, Information Retrieval, Sparse Autoencoders"
 image = "images/about_us_photos/nikola_mucnlp.jpg"
 linkedin = "https://www.linkedin.com/in/nikola-selic/"
 github = "https://github.com/Selich"
