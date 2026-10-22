@@ -34,7 +34,7 @@
     {{ range $past.ByDate.Reverse }}
         <div class="wrapper" id="{{ .Params.id }}">
         <div class="img">
-            {{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.title) "widths" (slice 320 640) "sizes" "25vw") }}
+            {{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.title) "widths" (slice 96 160 240 320 480 640) "sizes" "(min-width: 1200px) 237px, (min-width: 992px) 212px, (min-width: 768px) 162px, calc(22.5vw - 7px)") }}
         </div>
         <div class="event">
             <h3><a href="{{ .Permalink }}">{{ partial "brand/text.html" .Params.title }}</a></h3>
