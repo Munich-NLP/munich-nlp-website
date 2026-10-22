@@ -4,6 +4,12 @@ image = "/images/ev_jetbrains_26/theme_photo.png"
 summary = "Speakers: Tobias Lindenbauer and Artem Kislovskiy | October 13th, 2026 17:45"
 url = "/jetbrains_26"
 date = "2026-10-13T17:45:00+02:00"
+[location]
+name = "JetBrains Event Space"
+street_address = "Christoph-Rapparini-Bogen 23"
+city = "München"
+postal_code = "80639"
+country = "DE"
 +++
 
 

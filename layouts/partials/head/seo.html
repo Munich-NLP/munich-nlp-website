@@ -1,0 +1,60 @@
+{{- $name := .Params.name | default .Title | default .Site.Title -}}
+{{- $title := printf "%s | %s" $name .Site.Title -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Params.seoTitle -}}
+{{- end -}}
+{{- $description := .Description | default .Params.summary | default .Params.bio -}}
+{{- if not $description -}}
+  {{- if and .IsPage .Plain -}}
+    {{- $description = .Plain | plainify | truncate 160 -}}
+  {{- else -}}
+    {{- $description = .Site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+{{- $description = trim (replaceRE `\s+` " " ($description | plainify)) " \n\r\t" -}}
+{{- $card := (resources.Get "images/munich-hero.webp").Fill "1200x630 Center jpg q85" -}}
+{{- $image := $card.Permalink -}}
+{{- if and .IsPage (eq .Type "events") .Params.image -}}
+  {{- $image = .Params.image | absURL -}}
+{{- end -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="Munich NLP">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if partial "seo/indexable.html" . }}
+<meta name="robots" content="index, follow, max-image-preview:large">
+{{ else }}
+<meta name="robots" content="noindex, follow">
+{{ end }}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Munich NLP">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="{{ $name }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" title="Munich NLP updates" href="{{ .Permalink }}">
+{{ end }}
+{{- $organizationID := printf "%s#organization" .Site.BaseURL -}}
+{{- $websiteID := printf "%s#website" .Site.BaseURL -}}
+{{- $sameAs := slice "https://www.meetup.com/munich-nlp/" -}}
+{{- range .Site.Params.social -}}
+  {{- $sameAs = $sameAs | append .url -}}
+{{- end -}}
+{{- $organization := dict "@type" "Organization" "@id" $organizationID "name" "Munich NLP" "url" .Site.BaseURL "description" .Site.Params.description "logo" ("images/munichnlp.png" | absURL) "sameAs" $sameAs -}}
+{{- $website := dict "@type" "WebSite" "@id" $websiteID "name" "Munich NLP" "url" .Site.BaseURL "publisher" (dict "@id" $organizationID) "inLanguage" "en" -}}
+{{- $webpage := dict "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "name" $title "url" .Permalink "description" $description "isPartOf" (dict "@id" $websiteID) "inLanguage" "en" -}}
+{{- $graph := slice $organization $website $webpage -}}
+{{- if and .IsPage (eq .Type "events") .Params.location -}}
+  {{- $location := .Params.location -}}
+  {{- $address := dict "@type" "PostalAddress" "streetAddress" $location.street_address "addressLocality" $location.city "postalCode" $location.postal_code "addressCountry" $location.country -}}
+  {{- $place := dict "@type" "Place" "name" $location.name "address" $address -}}
+  {{- $event := dict "@type" "Event" "name" .Title "url" .Permalink "startDate" (.Date.Format "2006-01-02T15:04:05-07:00") "description" $description "image" (slice $image) "organizer" (dict "@id" $organizationID) "location" $place "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode" -}}
+  {{- $graph = $graph | append $event -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

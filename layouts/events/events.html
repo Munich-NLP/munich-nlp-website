@@ -1,6 +1,10 @@
 {{ define "main" }}
   <main id="main">
   	<div class="container">
+      <header class="events-header">
+        <h1>Munich NLP events</h1>
+        <p>NLP, large language model and AI talks, workshops and meetups in Munich.</p>
+      </header>
       {{ $events := where .Site.Sections "Section" "events" }}
       {{ with index $events 0 }}
           {{ partial "events/events.html" (dict "context" . "allEvents" true) }}

@@ -14,10 +14,10 @@
   <div id="head" class="parallax" data-parallax-speed="2">
     <div id="logo" class="site-hero-content text-center">
       <a class="site-logo" href="/">
-        <img class="img-{{ .Site.Params.avatarclass | default "noborder"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="Munich NLP">
+        {{ partial "images/optimized.html" (dict "src" .Site.Params.avatar "alt" "Munich NLP" "class" (printf "img-%s" (.Site.Params.avatarclass | default "noborder")) "widths" (slice 170 340) "sizes" "170px" "loading" "eager") }}
       </a>
       {{ if .IsHome }}
-        <p class="site-tagline">Munich’s community for NLP, LLMs &amp; AI</p>
+        <h1 class="site-tagline">Munich’s community for NLP, LLMs &amp; AI</h1>
         <p class="site-hero-pillars">Research · Industry · Community</p>
         <a class="site-hero-cta" href="/events/">Explore upcoming events</a>
         <a class="site-hero-credit" href="https://unsplash.com/photos/FZZ1rJc1FM4" target="_blank" rel="noopener noreferrer">Photo: Julian Ostarek · Unsplash</a>

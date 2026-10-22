@@ -2,12 +2,22 @@
 
 ## Local Development
 
-In `config.toml` set `production = true` to `production = false`. Reset this parameter before commit!
-
-Run hugo server with
+Run Hugo Extended locally with
 ```bash
 hugo -F server
 ```
+
+The production URL is `https://munich-nlp.com/`. Deployment uses this URL from `config.toml` so canonical links and the sitemap always use HTTPS.
+
+## Search indexing
+
+Public pages receive a canonical URL, description, social preview and JSON-LD metadata. The sitemap excludes internal homepage content and empty individual organizer pages; those pages remain accessible with `noindex`. `/robots.txt` advertises the public sitemap.
+
+After building, run `python3 scripts/check-seo.py public` to check the sitemap, HTTPS URLs, descriptions and structured data. Deployment runs the same check before publishing.
+
+Event pages with a `[location]` block also receive Event structured data. Use the existing SAP and JetBrains event files as examples, and enter only confirmed venue details. Search Console ownership and sitemap submission are managed separately at [Google Search Console](https://search.google.com/search-console/); submit `https://munich-nlp.com/sitemap.xml` there.
+
+Roboto Mono and the existing Bootstrap stylesheet are served locally. Their licenses are included in `static/licenses/`.
 
 ## Downsize Images
 

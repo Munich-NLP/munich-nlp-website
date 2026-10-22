@@ -22,6 +22,8 @@
 </div>
 </div>
 
+<p class="luma-calendar-link">View upcoming events and register on <a href="https://luma.com/munichnlp">Munich NLP on Luma</a>.</p>
+
 {{ if .allEvents }}
 <div id="pastevents"></div>
 <div class="row section featured topspace">
@@ -35,13 +37,13 @@
             {{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.title) "widths" (slice 320 640) "sizes" "25vw") }}
         </div>
         <div class="event">
-            <h3>{{ .Params.title }}</h3>
+            <h3><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
             {{ if .Params.recording }}
             <p>{{ .Params.summary }} | <a href="{{ .Params.recording }}">Youtube Recording</a></p>
             {{ else }}
             <p>{{ .Params.summary }}</p>
             {{ end }}
-            <p><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
+            <p><a href="{{ .Permalink }}" class="btn btn-action" aria-label="Event details for {{ .Params.title }}">Event details</a></p>
         </div>
         </div>
     {{ end }}

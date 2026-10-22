@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/roboto-mono-latin-300.woff2") format("woff2");
+}
+
 html {
   font-size: 100%;
 }
@@ -1235,6 +1243,35 @@ img[alt$="round"]{
 
 .luma-calendar {
   width: 100%;
+}
+
+.events-header {
+  max-width: 780px;
+  margin: 48px auto;
+  text-align: center;
+}
+
+.events-header h1 {
+  margin: 0 0 18px;
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.events-header p,
+.luma-calendar-link {
+  font-size: 16px;
+  text-align: center;
+}
+
+.event h3 a {
+  color: inherit;
+}
+
+.event h3 a:hover,
+.event p a:not(.btn),
+.entry-content a:not(.btn),
+.luma-calendar-link a {
+  text-decoration: underline;
+  text-underline-offset: .15em;
 }
 
 .luma-calendar iframe {

@@ -4,6 +4,12 @@ image = "/images/ev_sap_26/theme_photo.png"
 summary = "Speakers: Riswan Lathif and Jakob Sturm | August 25th, 2026 18:00"
 url = "/sap_26"
 date = "2026-08-25T18:00:00+02:00"
+[location]
+name = "SAP office"
+street_address = "Friedrich-Ludwig-Bauer-Str. 5"
+city = "Garching bei München"
+postal_code = "85748"
+country = "DE"
 +++
 
 

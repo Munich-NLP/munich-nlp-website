@@ -21,7 +21,7 @@
 					<p class="follow-me-icons">
             {{ range .Site.Params.social }}
 							{{ if .footer }}
-								<a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
+								<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title | title }}"><i class="{{ .icon }} fa-1x" aria-hidden="true"></i></a>
 							{{ end }}
             {{ end }}
 					</p>
@@ -87,19 +87,17 @@
 
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script defer src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 {{ $template := resources.Get "js/template.js" }}
 {{ $html5shiv := resources.Get "js/html5shiv.js" }}
 {{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify | resources.Fingerprint "sha512" }}
-<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
-{{ if .Site.Params.disqus -}}
+{{ if and .Params.comments .Site.Params.disqus.site -}}
 <script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
 {{ end -}}
 {{ if .Site.Params.google.analytics -}}
 {{ partial "footer/analyticstracking.html" . }}
 {{ end -}}
-</body>
-</html>

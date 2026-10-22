@@ -1,7 +1,9 @@
-baseURL = "https://munich-nlp.github.io/"
+baseURL = "https://munich-nlp.com/"
 languageCode = "en"
 title = "Munich NLP"
 theme = "hugo-initio"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 
 # Make existing photos available to Hugo's build-time image processing.
 [[module.mounts]]
@@ -13,7 +15,8 @@ theme = "hugo-initio"
 
 [params]
     name = "Munich NLP"
-    description = ""
+    description = "Munich NLP brings together researchers, developers and AI enthusiasts for NLP, large language model and AI talks, workshops and meetups in Munich."
+    seoTitle = "Munich NLP | NLP, LLM & AI Meetups in Munich"
     email = ""
     phone = ""
     address = ""

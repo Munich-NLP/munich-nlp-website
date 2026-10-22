@@ -1,0 +1,8 @@
+{{- $indexable := true -}}
+{{- if eq .Section "home" -}}
+  {{- $indexable = and .IsSection (in (slice "organizers" "organizers-former") .Type) -}}
+{{- end -}}
+{{- if or .Params.noindex (eq .Kind "404") -}}
+  {{- $indexable = false -}}
+{{- end -}}
+{{- return $indexable -}}

@@ -1,11 +1,15 @@
 jQuery(document).ready(function ($) {
+	if ($.fn.carousel && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		$('.carousel').carousel('pause');
+	}
 
 	var my_nav = $('.navbar-sticky');
 	// grab the initial top offset of the navigation 
-	var sticky_navigation_offset_top = my_nav.offset().top;
+	var sticky_navigation_offset_top = my_nav.length ? my_nav.offset().top : 0;
 
 	// our function that decides weather the navigation bar should have "fixed" css position or not.
 	var sticky_navigation = function () {
+		if (!my_nav.length) return;
 		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
 
 		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
@@ -17,6 +21,7 @@ jQuery(document).ready(function ($) {
 	};
 
 	var initio_parallax_animation = function () {
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 		$('.parallax').each(function (i, obj) {
 			var speed = $(this).data('parallax-speed');
 			if (speed) {
