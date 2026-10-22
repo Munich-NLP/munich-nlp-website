@@ -1,0 +1,33 @@
+{{- $image := false -}}
+{{- $src := .src -}}
+{{- if and (not (findRE `^(https?:)?//|^data:` $src)) (in (slice ".jpg" ".jpeg" ".png" ".webp") (lower (path.Ext $src))) -}}
+    {{- $image = resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- end -}}
+{{- $variant := false -}}
+{{- $sources := slice -}}
+{{- $seen := slice -}}
+{{- with $image -}}
+    {{- $original := . -}}
+    {{- range $.widths | default (slice 480 800 1200) -}}
+        {{- $width := int (math.Min . $original.Width) -}}
+        {{- if not (in $seen $width) -}}
+            {{- $variant = $original.Resize (printf "%dx webp q82" $width) -}}
+            {{- $sources = $sources | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+            {{- $seen = $seen | append $width -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+<img
+    {{- with .class }} class="{{ . }}"{{ end }}
+    {{- if $variant }}
+    src="{{ $variant.RelPermalink }}"
+    {{ printf "srcset=%q" (delimit $sources ", ") | safeHTMLAttr }}
+    sizes="{{ .sizes | default "100vw" }}"
+    width="{{ $variant.Width }}" height="{{ $variant.Height }}"
+    {{- else }}
+    src="{{ $src | relURL }}"
+    {{- end }}
+    alt="{{ .alt }}"
+    {{- with .title }} title="{{ . }}"{{ end }}
+    loading="{{ .loading | default "lazy" }}" decoding="async"
+>

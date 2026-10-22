@@ -1,11 +1,13 @@
 <header id="header">
+  {{ $hero := resources.Get "images/munich-hero.webp" }}
+  {{ $heroMobile := $hero.Fill "768x640 Center webp q82" }}
   <style>
     #head {
-      background-image: url('{{ .Site.Params.banner | relURL }}');
+      --hero-image: url('{{ $hero.RelPermalink }}');
     }
     @media (max-width: 768px) {
       #head {
-        background-image: url('{{ .Site.Params.bannerMobile | default .Site.Params.banner | relURL }}');
+        --hero-image: url('{{ $heroMobile.RelPermalink }}');
       }
     }
   </style>

@@ -8,7 +8,7 @@
         <div class="about-photo">
             {{ with .Params.image }}
                 <div class="about-photo-frame">
-                    <img class="about-photo-image" src="{{ . }}" alt="Munich NLP community">
+                    {{ partial "images/optimized.html" (dict "src" . "alt" "Munich NLP community" "class" "about-photo-image" "sizes" "(min-width: 768px) 45vw, 100vw" "loading" "eager") }}
                 </div>
             {{ else }}
                 <div class="about-photo-placeholder">

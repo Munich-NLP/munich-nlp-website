@@ -12,7 +12,7 @@
 				{{ range where .Site.RegularPages "Type" "organizers-former" }}
 					<div class="wrapper" id="{{ .Params.id }}">
 						<div class="img">
-							<img src="{{ .Params.image }}" alt="round">
+							{{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.name) "widths" (slice 256 512) "sizes" "25vw") }}
 						</div>
 						<div class="event">
 							<h3>{{ .Params.name }}</h3>

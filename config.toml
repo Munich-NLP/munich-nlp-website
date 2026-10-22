@@ -3,6 +3,14 @@ languageCode = "en"
 title = "Munich NLP"
 theme = "hugo-initio"
 
+# Make existing photos available to Hugo's build-time image processing.
+[[module.mounts]]
+    source = "assets"
+    target = "assets"
+[[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
+
 [params]
     name = "Munich NLP"
     description = ""

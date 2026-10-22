@@ -1311,7 +1311,7 @@ img.img-rounded {
 }
 .home #head {
   padding: 54px 0 48px;
-  background-image: linear-gradient(110deg, rgba(26, 27, 85, .94), rgba(46, 47, 123, .76)), url("/images/munich-hero.jpg") !important;
+  background-image: linear-gradient(110deg, rgba(26, 27, 85, .94), rgba(46, 47, 123, .76)), var(--hero-image);
   background-position: center 45%;
   background-size: cover;
 }
@@ -1390,6 +1390,7 @@ img.img-rounded {
 **********************************************************************/
 img {
   max-width: 100%;
+  height: auto;
 }
 .btn {
   font-size: 12px;

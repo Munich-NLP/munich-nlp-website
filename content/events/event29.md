@@ -1,6 +1,6 @@
 +++
 title = "Women Get-Together in NLP"
-image = "/images/ev_women_in_nlp/theme_photo.jpg"
+image = "/images/ev_women_in_nlp/theme_photo.png"
 summary = "Speaker: Prof. Dr. Barbara Plank, Annette Green, Claudia Schulze | Apr 24, 2023 18:00-21:00"
 recording = ""
 url = "/events/women-get-together-in-nlp"
@@ -9,7 +9,7 @@ date = "2023-04-20"
 
 <!--more-->
 
-![Women Get-Together in NLP ><](/images/ev_women_in_nlp/theme_photo.jpg)
+![Women Get-Together in NLP ><](/images/ev_women_in_nlp/theme_photo.png)
 
 
 ## Highlights of the Event

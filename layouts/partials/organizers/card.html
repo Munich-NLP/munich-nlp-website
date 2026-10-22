@@ -1,7 +1,7 @@
 <article class="organizer-card">
     <div class="organizer-profile">
         <div class="organizer-photo">
-            <img src="{{ .Params.image | relURL }}" alt="{{ .Params.name }}" loading="lazy">
+            {{ partial "images/optimized.html" (dict "src" .Params.image "alt" .Params.name "widths" (slice 96 192 288) "sizes" "96px") }}
         </div>
         <div class="organizer-intro">
             <h3>{{ .Params.name }}</h3>
