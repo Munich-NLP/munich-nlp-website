@@ -9,7 +9,7 @@ theme = "hugo-initio"
     target = "assets"
 [[module.mounts]]
     source = "static/images"
-    target = "assets/images"
+    target = "assets/photos"
 
 [params]
     name = "Munich NLP"

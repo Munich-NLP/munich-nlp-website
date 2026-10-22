@@ -1,7 +1,7 @@
 {{- $image := false -}}
 {{- $src := .src -}}
 {{- if and (not (findRE `^(https?:)?//|^data:` $src)) (in (slice ".jpg" ".jpeg" ".png" ".webp") (lower (path.Ext $src))) -}}
-    {{- $image = resources.Get (strings.TrimPrefix "/" $src) -}}
+    {{- $image = resources.Get (replaceRE `^images/` "photos/" (strings.TrimPrefix "/" $src)) -}}
 {{- end -}}
 {{- $variant := false -}}
 {{- $sources := slice -}}
