@@ -25,7 +25,7 @@
               <div id="{{ $section.Params.id }}"></div>
                 <div class="row section featured topspace">
                   <h2 class="section-title">
-                    <span>{{$section.Title}}</span>
+                    <span>{{ partial "brand/text.html" $section.Title }}</span>
                   </h2>
                 {{ partial (printf "%s%s.%s" "home/" $section.Type "html") $section }}
               </div>	<!-- /section -->

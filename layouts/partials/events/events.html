@@ -37,7 +37,7 @@
             {{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.title) "widths" (slice 320 640) "sizes" "25vw") }}
         </div>
         <div class="event">
-            <h3><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+            <h3><a href="{{ .Permalink }}">{{ partial "brand/text.html" .Params.title }}</a></h3>
             {{ if .Params.recording }}
             <p>{{ .Params.summary }} | <a href="{{ .Params.recording }}">Youtube Recording</a></p>
             {{ else }}

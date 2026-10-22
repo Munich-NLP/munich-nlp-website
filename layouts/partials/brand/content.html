@@ -1,0 +1,19 @@
+{{- /* Keep HTML attributes, comments and code intact; wrap the brand in text nodes. */ -}}
+{{- $skipTag := "" -}}
+{{- range findRE `(?s)<!--.*?-->|<(?:[^>"']|"[^"]*"|'[^']*')*>|[^<]+|<` (string .) -}}
+  {{- $token := . -}}
+  {{- if hasPrefix $token "<" -}}
+    {{- if $skipTag -}}
+      {{- if findRE (printf `(?i)^</%s\s*>` $skipTag) $token -}}
+        {{- $skipTag = "" -}}
+      {{- end -}}
+    {{- else if findRE `(?i)^<(script|style|pre|code|textarea)(\s|>)` $token -}}
+      {{- $skipTag = replaceRE `(?is)^<([a-z]+).*` "$1" $token | lower -}}
+    {{- end -}}
+    {{- $token | safeHTML -}}
+  {{- else if $skipTag -}}
+    {{- $token | safeHTML -}}
+  {{- else -}}
+    {{- replace $token "Munich🥨NLP" `<span class="brand-name">Munich🥨NLP</span>` | safeHTML -}}
+  {{- end -}}
+{{- end -}}

@@ -8,7 +8,7 @@
 
  				<article class="post">
 					<header class="entry-header">
- 						<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+						<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ partial "brand/text.html" .Title }}</a></h1>
 						 <div class="entry-meta">
 							<span class="posted-on">
 								<!-- <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
@@ -18,7 +18,7 @@
  						</div>
 					</header>
 					<div class="entry-content">
-						{{ .Content }}
+						{{ partial "brand/content.html" .Content }}
 					</div>
 				</article><!-- #post-## -->
 

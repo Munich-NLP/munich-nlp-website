@@ -27,6 +27,11 @@ html {
 .site-icon-large {
   font-size: 2em;
 }
+
+.brand-name {
+  display: inline-block;
+  white-space: nowrap;
+}
 body {
   font-size: 15px;
   font-size: 0.9375rem;
@@ -970,7 +975,11 @@ a:hover {
   }
 
   .about-copy h2 {
-    font-size: 32px;
+    font-size: clamp(22px, 8vw, 32px);
+  }
+
+  .event h3 {
+    font-size: clamp(20px, 5vw, 28px);
   }
 
   .about-copy > p:first-of-type {
@@ -1698,15 +1707,15 @@ img {
 .entry-title a {
   color: #333333;
 }
-.section-title span,
-.entry-title span {
+.section-title > span:not(.brand-name),
+.entry-title > span:not(.brand-name) {
   display: inline-block;
   position: relative;
 }
-.section-title span:before,
-.entry-title span:before,
-.section-title span:after,
-.entry-title span:after {
+.section-title > span:not(.brand-name):before,
+.entry-title > span:not(.brand-name):before,
+.section-title > span:not(.brand-name):after,
+.entry-title > span:not(.brand-name):after {
   content: "";
   position: absolute;
   height: 4px;
@@ -1715,13 +1724,13 @@ img {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
-.section-title span:before,
-.entry-title span:before {
+.section-title > span:not(.brand-name):before,
+.entry-title > span:not(.brand-name):before {
   right: 100%;
   margin-right: 45px;
 }
-.section-title span:after,
-.entry-title span:after {
+.section-title > span:not(.brand-name):after,
+.entry-title > span:not(.brand-name):after {
   left: 100%;
   margin-left: 45px;
 }
@@ -1734,6 +1743,11 @@ img {
   font-weight: normal;
   color: #a5a5a5;
   margin: 0 0 15px 0;
+}
+@media (max-width: 767px) {
+  .entry-title {
+    font-size: clamp(22px, 7vw, 36px);
+  }
 }
 .entry-header .entry-meta a {
   color: #a5a5a5;

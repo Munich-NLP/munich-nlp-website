@@ -16,11 +16,11 @@
                </span>
 						</div>
 						<h1 class="entry-title">
-						  <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+						  <a href="{{ .Permalink }}" rel="bookmark">{{ partial "brand/text.html" .Title }}</a>
 						</h1>
 					</header>
 					<div class="entry-content">
-						{{ .Content }}
+						{{ partial "brand/content.html" .Content }}
 					</div>
 				</article>
         {{ end }}
