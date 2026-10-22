@@ -572,6 +572,11 @@ a:hover {
   transition: color .2s ease, opacity .2s ease;
 }
 
+.collaborators-group img.collaborator-logo-color {
+  filter: none;
+  opacity: 1;
+}
+
 .collaborators-group a:hover img,
 .collaborators-group a:hover .collaborator-wordmark {
   filter: none;
