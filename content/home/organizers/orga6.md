@@ -1,4 +1,5 @@
 +++ 
+honorable_mention = true
 name = "Diego Miguel Lozano"
 bio = "Interested in language, computers and the intersection between them."
 res_int = "NLP, XAI, Evaluation, AI Ethics"

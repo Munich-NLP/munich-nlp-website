@@ -10,57 +10,26 @@
         <section class="organizers-group" aria-labelledby="current-organizers">
             <div class="organizers-group-heading">
                 <h2 id="current-organizers">Current organizers</h2>
-                <span>{{ len .Pages }} community builders</span>
+                <span>{{ len (where .Pages "Params.honorable_mention" "ne" true) }} community builders</span>
             </div>
             <div class="organizers-grid">
-                {{ $organizerOrder := slice "orga0" "orga1" "orga2" "orga5" "orga8" "orga7" "orga6" "orga4" "orga3" }}
+                {{ $organizerOrder := slice "orga7" "orga2" "orga4" "orga8" "orga1" }}
                 {{ range $organizerOrder }}
                     {{ with site.GetPage (printf "/home/organizers/%s" .) }}
-                    <article class="organizer-card">
-                        <div class="organizer-profile">
-                            <div class="organizer-photo">
-                                <img src="{{ .Params.image | relURL }}" alt="{{ .Params.name }}" loading="lazy">
-                            </div>
-                            <div class="organizer-intro">
-                                <h3>{{ .Params.name }}</h3>
-                                <p class="organizer-bio">{{ .Params.bio }}</p>
-                            </div>
-                        </div>
-                        <nav class="organizer-links" aria-label="{{ .Params.name }} links">
-                            {{ with .Params.linkedin }}
-                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            {{ end }}
-                            {{ with .Params.github }}
-                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            {{ end }}
-                            {{ with .Params.twitter }}
-                                {{ if hasPrefix . "http" }}
-                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="X">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                {{ end }}
-                            {{ end }}
-                            {{ with .Params.mail }}
-                                <a href="{{ if hasPrefix . "mailto:" }}{{ . }}{{ else }}mailto:{{ . }}{{ end }}" aria-label="Email">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            {{ end }}
-                            {{ with .Params.website }}
-                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
-                                    <i class="fas fa-link"></i>
-                                </a>
-                            {{ end }}
-                        </nav>
-                        <div class="organizer-interests">
-                            <span>Interests</span>
-                            <p>{{ .Params.res_int }}</p>
-                        </div>
-                    </article>
+                    {{ partial "organizers/card.html" . }}
                     {{ end }}
+                {{ end }}
+            </div>
+        </section>
+
+        <section class="organizers-group" aria-labelledby="honorable-mentions">
+            <div class="organizers-group-heading">
+                <h2 id="honorable-mentions">Honorable Mentions</h2>
+            </div>
+            <p class="organizers-group-description">Our community members who continue contributing from outside the Munich area.</p>
+            <div class="organizers-grid">
+                {{ range where .Pages "Params.honorable_mention" true }}
+                    {{ partial "organizers/card.html" . }}
                 {{ end }}
             </div>
         </section>

@@ -1,4 +1,5 @@
 +++ 
+honorable_mention = true
 name = "Philipp Koch"
 bio = "Background in CS and Stats. AI Optimist"
 res_int = "RL in NLP, zero-shot classification with LLMs and Search"

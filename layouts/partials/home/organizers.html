@@ -1,4 +1,4 @@
-{{ range where .Data.Pages "Section" .Section }}
+{{ range where (where .Data.Pages "Section" .Section) "Params.honorable_mention" "ne" true }}
  <div class="wrapper" id="{{ .Params.id }}">
    <div class="img">
      <img src={{ .Params.image }} alt="round">

@@ -1,0 +1,44 @@
+<article class="organizer-card">
+    <div class="organizer-profile">
+        <div class="organizer-photo">
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Params.name }}" loading="lazy">
+        </div>
+        <div class="organizer-intro">
+            <h3>{{ .Params.name }}</h3>
+            <p class="organizer-bio">{{ .Params.bio }}</p>
+        </div>
+    </div>
+    <nav class="organizer-links" aria-label="{{ .Params.name }} links">
+        {{ with .Params.linkedin }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        {{ end }}
+        {{ with .Params.github }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        {{ end }}
+        {{ with .Params.twitter }}
+            {{ if hasPrefix . "http" }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            {{ end }}
+        {{ end }}
+        {{ with .Params.mail }}
+            <a href="{{ if hasPrefix . "mailto:" }}{{ . }}{{ else }}mailto:{{ . }}{{ end }}" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        {{ end }}
+        {{ with .Params.website }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                <i class="fas fa-link"></i>
+            </a>
+        {{ end }}
+    </nav>
+    <div class="organizer-interests">
+        <span>Interests</span>
+        <p>{{ .Params.res_int }}</p>
+    </div>
+</article>
