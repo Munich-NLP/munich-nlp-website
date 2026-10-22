@@ -586,10 +586,7 @@ a:hover {
   max-width: 100%;
   height: auto;
   max-height: 45px;
-  filter: grayscale(100%);
-  opacity: .68;
   object-fit: contain;
-  transition: filter .2s ease, opacity .2s ease;
 }
 
 .collaborator-wordmark {
@@ -599,19 +596,7 @@ a:hover {
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-  opacity: .72;
-  transition: color .2s ease, opacity .2s ease;
-}
-
-.collaborators-group img.collaborator-logo-color {
-  filter: none;
-  opacity: 1;
-}
-
-.collaborators-group a:hover img,
-.collaborators-group a:hover .collaborator-wordmark {
-  filter: none;
-  opacity: 1;
+  transition: color .2s ease;
 }
 
 .collaborators-group a:hover .collaborator-wordmark {
