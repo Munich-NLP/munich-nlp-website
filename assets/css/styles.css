@@ -594,6 +594,10 @@ a:hover {
   object-fit: contain;
 }
 
+.collaborators-group img.collaborator-logo-pyladies {
+  max-height: 72px;
+}
+
 .collaborator-wordmark {
   color: #62636a;
   font-family: Helvetica, Arial, sans-serif;
