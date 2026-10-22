@@ -92,8 +92,9 @@
 
 {{ $template := resources.Get "js/template.js" }}
 {{ $html5shiv := resources.Get "js/html5shiv.js" }}
-{{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify }}
+{{ $jsHash := $js | resources.Fingerprint "sha512" }}
+<script defer src="{{ $js.RelPermalink }}?v={{ $jsHash.Data.Integrity | sha256 }}"></script>
 
 {{ if and .Params.comments .Site.Params.disqus.site -}}
 <script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>

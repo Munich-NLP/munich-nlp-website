@@ -11,8 +11,10 @@
 	
 	{{ $bootstrap := resources.Get "css/vendor/bootstrap.css" }}
 	{{ $styles := resources.Get "css/styles.css" }}
-  {{ $css := slice $bootstrap $styles | resources.Concat "css/site.css" | resources.Minify | resources.Fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $css := slice $bootstrap $styles | resources.Concat "css/site.css" | resources.Minify }}
+  {{ $cssHash := $css | resources.Fingerprint "sha512" }}
+  {{/* A stable file path keeps cached HTML working across Pages deployments. */}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}?v={{ $cssHash.Data.Integrity | sha256 }}">
 
   <!-- Share this --> 
   {{ if .Site.Params.customsharethis }}
