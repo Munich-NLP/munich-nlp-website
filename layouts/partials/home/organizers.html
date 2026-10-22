@@ -1,4 +1,4 @@
-{{ range where (where .Data.Pages "Section" .Section) "Params.honorable_mention" "ne" true }}
+{{ range sort (where (where .Data.Pages "Section" .Section) "Params.honorable_mention" "ne" true) "Params.name" }}
  <div class="wrapper" id="{{ .Params.id }}">
    <div class="img">
      {{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.name) "widths" (slice 256 512) "sizes" "25vw") }}

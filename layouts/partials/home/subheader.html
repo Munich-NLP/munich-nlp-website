@@ -4,6 +4,10 @@
         <div class="about-copy">
             <h2>What is <span>Munich🥨<br>NLP</span>?</h2>
             {{ .Content }}
+            <nav class="about-actions" aria-label="Community links">
+                <a class="about-action-primary" href="https://discord.gg/XWjVzYvjAu">Join the Community</a>
+                <a href="/organizers/">Our Organizers</a>
+            </nav>
         </div>
         <div class="about-photo">
             {{ with .Params.image }}

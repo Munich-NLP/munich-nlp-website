@@ -9,7 +9,7 @@
 		</div>
 		<div class="row topspace">
 			<div class="col-sm-12">
-				{{ range where .Site.RegularPages "Type" "organizers-former" }}
+				{{ range sort (where .Site.RegularPages "Type" "organizers-former") "Params.name" }}
 					<div class="wrapper" id="{{ .Params.id }}">
 						<div class="img">
 							{{ partial "images/optimized.html" (dict "src" .Params.image "alt" (printf "%s round" .Params.name) "widths" (slice 256 512) "sizes" "25vw") }}

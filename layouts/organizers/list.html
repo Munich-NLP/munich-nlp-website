@@ -13,11 +13,8 @@
                 <span>{{ len (where .Pages "Params.honorable_mention" "ne" true) }} community builders</span>
             </div>
             <div class="organizers-grid">
-                {{ $organizerOrder := slice "orga7" "orga2" "orga4" "orga8" "orga1" }}
-                {{ range $organizerOrder }}
-                    {{ with site.GetPage (printf "/home/organizers/%s" .) }}
+                {{ range sort (where .Pages "Params.honorable_mention" "ne" true) "Params.name" }}
                     {{ partial "organizers/card.html" . }}
-                    {{ end }}
                 {{ end }}
             </div>
         </section>
@@ -28,7 +25,7 @@
             </div>
             <p class="organizers-group-description">Our community members who continue contributing from outside the Munich area.</p>
             <div class="organizers-grid">
-                {{ range where .Pages "Params.honorable_mention" true }}
+                {{ range sort (where .Pages "Params.honorable_mention" true) "Params.name" }}
                     {{ partial "organizers/card.html" . }}
                 {{ end }}
             </div>
