@@ -807,6 +807,16 @@ a:hover {
   transform: translateY(-3px);
 }
 
+/* Share the profile, links and interests tracks across each row of cards. */
+@supports (grid-template-rows: subgrid) {
+  .organizer-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    row-gap: 0;
+  }
+}
+
 .organizer-profile {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
@@ -854,8 +864,9 @@ a:hover {
 }
 
 .organizer-interests {
+  flex-shrink: 0;
   width: 100%;
-  min-height: 92px;
+  min-height: 132px;
   margin-top: 0;
   padding: 13px 18px 15px;
   border-top: 1px solid #e4e3ed;
